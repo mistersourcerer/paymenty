@@ -14,13 +14,16 @@ gem "puma", ">= 5.0"
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem "tzinfo-data", platforms: %i[ windows jruby ]
-
 gem "bootsnap", require: false
 gem "rack-cors"
+
+gem 'rswag-api'
+gem 'rswag-ui'
 
 group :development, :test do
   gem "debug", platforms: %i[ mri windows ]
   gem "rspec-rails", "~> 6.1"
+  gem 'rswag-specs'
 end
 
 group :development do
