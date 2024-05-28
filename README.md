@@ -1,24 +1,7 @@
-# README
+# PAYMENTY!
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+E AÍ Quero ser devers!? Tudo belezura pura, coisa marota bonita?
 
-Things you may want to cover:
+## Instruções de uso
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Nos vemos na sala! XD
