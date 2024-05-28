@@ -85,6 +85,9 @@ GEM
     concurrent-ruby (1.2.3)
     connection_pool (2.4.1)
     crass (1.0.6)
+    credit_card_validations (6.2.0)
+      activemodel (>= 5.2, < 7.2)
+      activesupport (>= 5.2, < 7.2)
     date (3.3.4)
     debug (1.9.2)
       irb (~> 1.10)
@@ -226,6 +229,7 @@ PLATFORMS
 
 DEPENDENCIES
   bootsnap
+  credit_card_validations (~> 6.2)
   debug
   puma (>= 5.0)
   rack-cors
