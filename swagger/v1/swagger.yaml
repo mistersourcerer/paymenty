@@ -1,0 +1,56 @@
+---
+openapi: 3.0.1
+info:
+  title: API V1
+  version: v1
+paths:
+  "/payments":
+    post:
+      summary: Creates a new payment
+      parameters: []
+      responses:
+        '200':
+          description: payment sucessfully created
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  payment:
+                    type: object
+                    properties:
+                      value:
+                        type: number
+                      created_at:
+                        type: string
+                      status:
+                        type: string
+        '422':
+          description: invalid card
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                payment:
+                  type: object
+                  properties:
+                    value:
+                      type: number
+                    number:
+                      type: string
+                    valid:
+                      type: string
+                    cvv:
+                      type: integer
+              required:
+              - value
+              - number
+              - valid
+              - cvv
+servers:
+- url: https://{defaultHost}
+  variables:
+    defaultHost:
+      default: www.example.com
